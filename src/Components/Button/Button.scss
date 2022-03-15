@@ -1,0 +1,18 @@
+.btn {
+  padding: 16px 90px;
+  border-radius: 27.5px;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  &.blue {
+    background: #1d9bf0;
+    color: #ffffff;
+  }
+  &.black {
+    background: #000;
+    color: #fff;
+  }
+}

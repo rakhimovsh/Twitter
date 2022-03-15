@@ -1,0 +1,44 @@
+.navbar {
+  width: 100%;
+  max-width: 268px;
+  &__logo-link {
+    padding-top: 31px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    margin-top: 49px;
+    margin-bottom: 30px;
+    list-style: none;
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-top: 260px;
+    width: 100%;
+    max-width: 253px;
+    &--img {
+      margin-right: 10px;
+    }
+    &--name {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+      color: #000000;
+      & > span {
+        opacity: 0.6;
+      }
+    }
+    &--more {
+      margin-left: auto;
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
