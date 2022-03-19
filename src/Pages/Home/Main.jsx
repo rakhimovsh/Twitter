@@ -1,12 +1,15 @@
 import "./Main.scss";
+import React from "react";
 import customize from "../../Assets/Images/Customize.png";
 import userBobur from "../../Assets/Images/user__bobur.jpg";
 import frame from "../../Assets/Images/Frame.png";
-import Button from "../Button/Button";
-import CommentItem from "../CommentItem/CommentItem";
+import Button from "../../Components/Button/Button";
+import CommentItem from "../../Components/CommentItem/CommentItem";
 import user__rajLohati from "../../Assets/Images/user__rajLohati.jpg";
 import shashlik from "../../Assets/Images/shashlik.jpg";
+import { Context as languagesContext } from "../../Components/Context/LanguagesContext";
 function Main() {
+  const { lang, setLang } = React.useContext(languagesContext);
   return (
     <main className="main">
       <section className="hero">
@@ -15,7 +18,7 @@ function Main() {
           <option value="light">Light mode</option>
           <option value="dark">Dark mode</option>
         </select>
-        <select>
+        <select value={lang} onChange={(evt) => setLang(evt.target.value)}>
           <option value="uz">UZ</option>
           <option value="ru">RU</option>
           <option value="en">EN</option>

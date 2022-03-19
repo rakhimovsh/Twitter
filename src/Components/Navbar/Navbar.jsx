@@ -1,4 +1,5 @@
 import "./Navbar.scss";
+import React from "react";
 import logoTwitter from "../../Assets/Images/twitter-logo.svg";
 import NavbarItem from "../NavbarItem/NavbarItem";
 import homeLogo from "../../Assets/Images/homeIcon.png";
@@ -11,8 +12,11 @@ import listsLogo from "../../Assets/Images/lists.png";
 import moreLogo from "../../Assets/Images/more.png";
 import Button from "../Button/Button";
 import userBobur from "../../Assets/Images/user__bobur.jpg";
+import { Context as languagesContext } from "../Context/LanguagesContext";
+import languages from "../../Localization/Loclization";
 
 const Navbar = () => {
+  const { lang, setLang } = React.useContext(languagesContext);
   return (
     <div className="navbar">
       <a className="navbar__logo-link" href="#index">
@@ -26,31 +30,31 @@ const Navbar = () => {
       </a>
       <ul className="navbar__list">
         <NavbarItem imgLink={homeLogo} width={28} height={28}>
-          Home
+          {languages[lang].navbar.navItem1}
         </NavbarItem>
         <NavbarItem imgLink={exploreLogo} width={28} height={28}>
-          Explore
+          {languages[lang].navbar.navItem2}
         </NavbarItem>
         <NavbarItem imgLink={notificationsLogo} width={28} height={28}>
-          Notifications
+          {languages[lang].navbar.navItem3}
         </NavbarItem>
         <NavbarItem imgLink={messagesLogo} width={28} height={28}>
-          Messages
+          {languages[lang].navbar.navItem4}
         </NavbarItem>
         <NavbarItem imgLink={bookmarksLogo} width={28} height={28}>
-          Bookmarks
+          {languages[lang].navbar.navItem5}
         </NavbarItem>
         <NavbarItem imgLink={listsLogo} width={28} height={28}>
-          Lists
+          {languages[lang].navbar.navItem6}
         </NavbarItem>
         <NavbarItem imgLink={profileLogo} width={28} height={28}>
-          Profile
+          {languages[lang].navbar.navItem7}
         </NavbarItem>
         <NavbarItem imgLink={moreLogo} width={28} height={28}>
-          More
+          {languages[lang].navbar.navItem8}
         </NavbarItem>
       </ul>
-      <Button color={"blue"}>Tweet</Button>
+      <Button color={"blue"}>{languages[lang].navbar.button}</Button>
 
       <div className="navbar__user">
         <img
