@@ -1,0 +1,20 @@
+.footer {
+  padding-left: 28px;
+  padding-top: 20px;
+  &__search {
+    max-width: 373px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 64px;
+    margin-bottom: 20px;
+    background: #eff3f4;
+    border-radius: 31px;
+    border: none;
+    background-image: url("../../Assets/Images/lupa.png");
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+  }
+  &__bottom {
+    color: #536471;
+  }
+}

@@ -1,0 +1,52 @@
+.mightLike {
+  padding: 20px 15px;
+  background: #f7f9f9;
+  border-radius: 10px;
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item + &__item {
+    margin-top: 25px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__user {
+    margin-left: 13px;
+  }
+  &__name {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &__link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000000;
+    opacity: 0.6;
+  }
+  &__btn {
+    margin-top: 30px;
+    border: none;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #1da1f2;
+    cursor: pointer;
+  }
+}

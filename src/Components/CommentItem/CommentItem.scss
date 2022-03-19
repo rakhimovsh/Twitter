@@ -1,0 +1,50 @@
+.commentItem {
+  position: relative;
+  border-bottom: 1px solid #d8d8d8;
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-right: 62px;
+  &__userImg {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  &__time,
+  &__link {
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.6;
+  }
+  &__desc {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.9;
+  }
+  &__otherLink {
+    text-decoration: none;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000000;
+    font-size: 20px;
+  }
+  &__like {
+    padding-top: 22px;
+    padding-bottom: 21px;
+  }
+}

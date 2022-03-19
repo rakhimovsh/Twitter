@@ -12,7 +12,27 @@
     color: #ffffff;
   }
   &.black {
+    padding: 10px 18px;
+    margin-left: auto;
     background: #000;
     color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: #ffffff;
+  }
+  &.medium {
+    padding: 15px 30px;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.9;
+  }
+  &.absolute {
+    position: absolute;
+    bottom: 5px;
+    right: 18px;
   }
 }

@@ -23,6 +23,8 @@
 }
 .feedback {
   padding: 20px;
+  border-bottom: 1px solid #d8d8d8;
+  position: relative;
   &__user {
     display: flex;
     align-items: center;
@@ -42,5 +44,13 @@
   &__collection {
     margin-left: 97px;
     margin-top: 33px;
+    padding-bottom: 46px;
+  }
+}
+
+.comment {
+  &__list {
+    padding: 0;
+    list-style: none;
   }
 }
