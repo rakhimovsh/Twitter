@@ -14,10 +14,6 @@ function Main() {
     <main className="main">
       <section className="hero">
         <h2 className="hero__title">Home</h2>
-        <select>
-          <option value="light">Light mode</option>
-          <option value="dark">Dark mode</option>
-        </select>
         <select value={lang} onChange={(evt) => setLang(evt.target.value)}>
           <option value="uz">UZ</option>
           <option value="ru">RU</option>
@@ -28,7 +24,10 @@ function Main() {
       <section className="feedback">
         <div className="feedback__user">
           <img src={userBobur} alt="" width={60} height={60} />
-          <p className="feedback__desc">What’s happening</p>
+          <textarea
+            className="feedback__desc"
+            placeholder="What’s happening"
+          ></textarea>
         </div>
         <a href="#link">
           <img className="feedback__collection" src={frame} alt="" />

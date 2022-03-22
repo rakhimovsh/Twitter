@@ -29,28 +29,53 @@ const Navbar = () => {
         />
       </a>
       <ul className="navbar__list">
-        <NavbarItem imgLink={homeLogo} width={28} height={28}>
+        <NavbarItem imgLink={homeLogo} width={28} height={28} toThe="/">
           {languages[lang].navbar.navItem1}
         </NavbarItem>
-        <NavbarItem imgLink={exploreLogo} width={28} height={28}>
+        <NavbarItem
+          imgLink={exploreLogo}
+          width={28}
+          height={28}
+          toThe="/explore"
+        >
           {languages[lang].navbar.navItem2}
         </NavbarItem>
-        <NavbarItem imgLink={notificationsLogo} width={28} height={28}>
+        <NavbarItem
+          imgLink={notificationsLogo}
+          width={28}
+          height={28}
+          toThe="/notifications"
+        >
           {languages[lang].navbar.navItem3}
         </NavbarItem>
-        <NavbarItem imgLink={messagesLogo} width={28} height={28}>
+        <NavbarItem
+          imgLink={messagesLogo}
+          width={28}
+          height={28}
+          toThe="/messages"
+        >
           {languages[lang].navbar.navItem4}
         </NavbarItem>
-        <NavbarItem imgLink={bookmarksLogo} width={28} height={28}>
+        <NavbarItem
+          imgLink={bookmarksLogo}
+          width={28}
+          height={28}
+          toThe="/bookmarks"
+        >
           {languages[lang].navbar.navItem5}
         </NavbarItem>
-        <NavbarItem imgLink={listsLogo} width={28} height={28}>
+        <NavbarItem imgLink={listsLogo} width={28} height={28} toThe="/lists">
           {languages[lang].navbar.navItem6}
         </NavbarItem>
-        <NavbarItem imgLink={profileLogo} width={28} height={28}>
+        <NavbarItem
+          imgLink={profileLogo}
+          width={28}
+          height={28}
+          toThe="/profile"
+        >
           {languages[lang].navbar.navItem7}
         </NavbarItem>
-        <NavbarItem imgLink={moreLogo} width={28} height={28}>
+        <NavbarItem imgLink={moreLogo} width={28} height={28} toThe="/more">
           {languages[lang].navbar.navItem8}
         </NavbarItem>
       </ul>

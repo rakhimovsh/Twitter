@@ -39,7 +39,9 @@
     font-weight: 600;
     font-size: 22px;
     line-height: 29px;
-    color: #828282;
+    border-color: transparent;
+    outline: none;
+    resize: none;
   }
   &__collection {
     margin-left: 97px;

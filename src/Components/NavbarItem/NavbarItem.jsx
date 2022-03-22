@@ -1,9 +1,10 @@
 import "./NavbarItem.scss";
+import { NavLink } from "react-router-dom";
 
-function NavbarItem({ imgLink, children, width, height }) {
+function NavbarItem({ imgLink, children, width, height, toThe }) {
   return (
     <li className="navbarItem">
-      <a className="navbarItem__link" href="#link">
+      <NavLink className="navbarItem__link" to={toThe}>
         <img
           className="navbarItem__img"
           src={imgLink}
@@ -12,7 +13,7 @@ function NavbarItem({ imgLink, children, width, height }) {
           height={height}
         />
         {children}
-      </a>
+      </NavLink>
     </li>
   );
 }

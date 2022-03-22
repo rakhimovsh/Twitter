@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Provider as LoginProvider } from "./Components/Context/LoginContext";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <LoginProvider>
+        <App />
+      </LoginProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

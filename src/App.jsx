@@ -1,25 +1,16 @@
-import "./App.scss";
-import "./Components/Fonts/Fonts.scss";
-import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
-import { Provider as LanguageProvider } from "./Components/Context/LanguagesContext";
-import { Routes, Route } from "react-router-dom";
-import Main from "./Pages/Home/Main";
-import Profile from "./Pages/Profile/Profile";
+import React from "react";
+import All from "./All";
+import Login from "./Pages/Login/Login";
+import { Context } from "./Components/Context/LoginContext";
 
 function App() {
-  return (
-    <>
-      <LanguageProvider>
-        <Navbar />
-        <Routes>
-          <Route path="" element={<Main />} />
-          <Route path="profile" element={<Profile />} />
-        </Routes>
-        <Footer />
-      </LanguageProvider>
-    </>
-  );
+  const { token } = React.useContext(Context);
+  const isLogenned = token;
+  if (isLogenned) {
+    return <All />;
+  } else {
+    return <Login />;
+  }
 }
 
 export default App;
